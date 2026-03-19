@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
+@theme {
+  --font-sans: "Fira Sans Condensed", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", sans-serif;
+  
+  --color-bg: #1b1919;
+  --color-accent: #ffffff;
+  --color-gray: #545050;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-white font-sans antialiased;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Custom scrollbar styling as per project requirement */
+.content__list-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.content__list-container::-webkit-scrollbar-track {
+  background: rgba(217, 217, 217, 0.1);
+}
+
+.content__list-container::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+}
+
+/* Line clamp for description */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
