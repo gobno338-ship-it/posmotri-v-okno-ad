@@ -1,1 +1,1 @@
-https://github.com/gobno338/posmotri-v-okno-ad
+https://github.com/gobno338-ship-it/posmotri-v-okno-ad
